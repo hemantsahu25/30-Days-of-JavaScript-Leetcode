@@ -16,8 +16,7 @@ var expect = function(val) {
             if(val!==val1) return true 
             else throw new Error("Equal");            
         }       
-    }
-    
+    }    
 };
 
 /**
