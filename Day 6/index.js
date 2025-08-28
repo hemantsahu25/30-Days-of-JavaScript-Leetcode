@@ -10,13 +10,19 @@
  * Please solve it without the built-in Array.filter method.
  */
 
-const ages = [18,12,33,15,45]
+/**
+ * @param {number[]} arr
+ * @param {Function} fn
+ * @return {number[]}
+ */
 
-const result = ages.filter(adult)
-
-function adult(age){
-    return age >=18;
-}
-console.log(result);
-
+var filter = function(arr, fn) {
+   let newArr = []
+   for(let i=0; i<arr.length ; i++){
+    if(fn(arr[i], i)){
+        newArr.push(arr[i])
+    }
+   } 
+   return newArr
+};
 
